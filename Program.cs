@@ -1,11 +1,17 @@
-﻿Console.Write("Введите сумму покупки: ");
-double summ = double.Parse(Console.ReadLine());
-if (summ > 1000)
-{
-    summ = summ - (summ * 0.1);       // скидка 10%
+﻿int age = 20;
+if (age >= 21) {
+    Console.WriteLine("Доступ разрешён");
 }
-else if (summ > 500)
+Console.WriteLine("Программа продолжает работу");
+
+int age1 = 15;
+if (age1 >= 18)
 {
-    summ = summ - (summ * 0.05); // скидка 5%
-} Console.WriteLine($"К оплате: {summ}");
+    Console.WriteLine("Доступ разрешён");
+} else {
+    Console.WriteLine("Доступ запрещён");
+    Console.WriteLine($"{18 - age1} лeт осталось ждать до совершеннолетия");
+}
+
+
 
